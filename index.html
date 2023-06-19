@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal.css" type="text/css">
+    </head>
+    <body class="bg">
+        <div class="iu">
+        <p class="tot" id="s"><p>
+        <div class="cal">
+        <ul class="cal1">
+            <li><button id="b" value="" onclick="no20()" >C</button></li>
+            <li><button  id="c1" value="7" onclick="no()">7</button></li>
+            <li><button  id="c2" value="4" onclick="no1()">4</button></li>
+            <li><button  id="c3" value="1" onclick="no2()">1</button></li>
+            <li><button class="dot4" id="c4" value="." onclick="no3()">.</button></li>
+        </ul>
+        <ul class="cal1">
+            <li><button  id="c19" value="%" onclick="no18()">%</button></li>
+            <li><button  id="c5" value="8" onclick="no4()">8</button></li>
+           <li><button  id="c6" value="5" onclick="no5()">5</button></li>
+            <li><button  id="c7" value="2" onclick="no6()">2</button></li>
+            <li><button  id="c8" value="0" onclick="no7()">0</button></li>
+        </ul>
+        <ul class="cal1">
+            <li><button  id="c9" value="" onclick="no8()">⇦</button></li>
+            <li><button  id="c10" value="9" onclick="no9()">9</button></li>
+            <li><button  id="c11" value="6" onclick="no10()">6</button></li>
+            <li><button  id="c12" value="3" onclick="no11()">3</button></li>
+            <li><button class="dot1" id="c13" value="00" onclick="no12()">00</button></li>
+            
+        </ul>
+        <ul class="cal1">
+            <li><button " id="c14" value="÷" onclick="no13()">÷</button></li>
+            <li><button  id="c15" value="*" onclick="no14()">x</button></li>
+            <li><button class="dot4" id="c16" value="-" onclick="no15()">-</button></li>
+            <li><button  id="c17" value="+" onclick="no16()">+</button></li>
+            <li><button class="equal" id="c18" value="=" onclick="no17()">=</button></li>
+        </ul>
+    </div>
+</div>
+    <script>
+        let g="";
+        function no(){
+            let x=document.getElementById("c1").value;
+            g=g+x;
+             document.getElementById("s").innerHTML=g;
+        }
+        function no1(){
+            let b=document.getElementById("c2").value;
+            g=g+b;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no2(){
+            let c=document.getElementById("c3").value;
+            g=g+c;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no3(){
+            let d=document.getElementById("c4").value;
+            g=g+d;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no4(){
+            let a=document.getElementById("c5").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no5(){
+            let a=document.getElementById("c6").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no6(){
+            let a=document.getElementById("c7").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no7(){
+            let a=document.getElementById("c8").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no9(){
+            let a=document.getElementById("c10").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no10(){
+            let a=document.getElementById("c11").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no11(){
+            let a=document.getElementById("c12").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no12(){
+            let a=document.getElementById("c13").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no13(){
+            let a=document.getElementById("c14").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no14(){
+            let a=document.getElementById("c15").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no15(){
+            let a=document.getElementById("c16").value;
+            g=g+a;
+            
+            document.getElementById("s").innerHTML=g;
+        }
+        function no16(){
+            let a=document.getElementById("c17").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no18(){
+            let a=document.getElementById("c19").value;
+            g=g+a;
+            document.getElementById("s").innerHTML=g;
+        }
+        function no17(){
+            
+            document.getElementById("s").innerHTML=eval(g);
+        }
+        function no8(){
+           
+            document.getElementById("s").innerHTML=g;
+        }
+        function no20(){
+            g="";
+            document.getElementById("s").innerHTML=g;
+        }
+       
+
+
+    </script>
+    </body>
+</html>
